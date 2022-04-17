@@ -76,60 +76,61 @@ CREATE TABLE SpotifyClone.musics (
   music_id INT PRIMARY KEY AUTO_INCREMENT,
   music_name VARCHAR(50) NOT NULL,
   album_id INT NOT NULL,
+  seconds_duraction INT NOT NULL,
   FOREIGN KEY (album_id) REFERENCES albuns(album_id)
 ) engine = InnoDB;
 
-INSERT INTO SpotifyClone.musics (music_name, album_id)
+INSERT INTO SpotifyClone.musics (music_name, album_id, seconds_duraction)
 VALUES
-  ("Soul For Us", 1),
-  ("Reflections Of Magic", 1),
-  ("Dance With Her Own", 1),
+  ("Soul For Us", 1, 200),
+  ("Reflections Of Magic", 1, 163),
+  ("Dance With Her Own", 1, 116),
 
-  ("Troubles Of My Inner Fire", 2),
-  ("Time Firewoks", 2),
+  ("Troubles Of My Inner Fire", 2, 203),
+  ("Time Firewoks", 2, 152),
 
-  ("Magic Circus", 3),
-  ("Honey, So Do I", 3),
-  ("Sweetie, Let's Go Wild", 3),
-  ("She Knows", 3),
+  ("Magic Circus", 3, 105),
+  ("Honey, So Do I", 3, 207),
+  ("Sweetie, Let's Go Wild", 3, 139),
+  ("She Knows", 3, 244),
 
-  ("Fantasy For Me", 4),
-  ("Celebration Of More", 4),
-  ("Rock His Everything", 4),
-  ("Home Forever", 4),
-  ("Diamond Power", 4),
-  ("Let's Be Silly", 4),
+  ("Fantasy For Me", 4, 100),
+  ("Celebration Of More", 4, 146),
+  ("Rock His Everything", 4, 223),
+  ("Home Forever", 4, 231),
+  ("Diamond Power", 4, 241),
+  ("Let's Be Silly", 4, 132),
 
-  ("Thang Of Thunder", 5),
-  ("Words Of Her Life", 5),
-  ("Without My Streets", 5),
+  ("Thang Of Thunder", 5, 240),
+  ("Words Of Her Life", 5, 185),
+  ("Without My Streets", 5, 176),
 
-  ("Need Of The Evening", 6),
-  ("History Of My Roses", 6),
-  ("Without My Love", 6),
-  ("Walking And Game", 6),
-  ("Young And Father", 6),
+  ("Need Of The Evening", 6, 190),
+  ("History Of My Roses", 6, 222),
+  ("Without My Love", 6, 111),
+  ("Walking And Game", 6, 123),
+  ("Young And Father", 6, 197),
 
-  ("Finding My Traditions", 7),
-  ("Walking And Man", 7),
-  ("Hard And Time", 7),
-  ("Honey, I'm A Lone Wolf", 7),
+  ("Finding My Traditions", 7, 179),
+  ("Walking And Man", 7, 229),
+  ("Hard And Time", 7, 135),
+  ("Honey, I'm A Lone Wolf", 7, 150),
 
-  ("She Thinks I Won't Stay Tonight", 8),
-  ("He Heard You're Bad For Me", 8),
-  ("He Hopes We Can't Stay", 8),
-  ("I Know I Know", 8),
+  ("She Thinks I Won't Stay Tonight", 8, 166),
+  ("He Heard You're Bad For Me", 8, 154),
+  ("He Hopes We Can't Stay", 8, 210),
+  ("I Know I Know", 8, 117),
 
-  ("He's Walking Away", 9),
-  ("He's Trouble", 9),
-  ("I Heard I Want To Bo Alone", 9),
-  ("I Ride Alone", 9),
+  ("He's Walking Away", 9, 159),
+  ("He's Trouble", 9, 138),
+  ("I Heard I Want To Bo Alone", 9, 120),
+  ("I Ride Alone", 9, 151),
 
-  ("Honey", 10),
-  ("You Cheated On Me", 10),
-  ("Wouldnt It Be Nice", 10),
-  ("Baby", 10),
-  ("You Make Me Feel So..", 10);
+  ("Honey", 10, 79),
+  ("You Cheated On Me", 10, 95),
+  ("Wouldnt It Be Nice", 10, 213),
+  ("Baby", 10, 136),
+  ("You Make Me Feel So..", 10, 83);
 
 CREATE TABLE SpotifyClone.follows (
   user_id INT NOT NULL,
