@@ -13,7 +13,7 @@ VALUES
   ('gratuito', 0),
   ('universitário', 5.99),
   ('pessoal', 6.99),
-  ('familiar', 799);
+  ('familiar', 7.99);
 
 CREATE TABLE SpotifyClone.users(
   user_id INT PRIMARY KEY AUTO_INCREMENT,
