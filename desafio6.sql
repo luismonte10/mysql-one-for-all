@@ -6,4 +6,4 @@ SELECT
 FROM
     SpotifyClone.plans AS pl
         INNER JOIN
-    users AS us ON us.plan_id = pl.plan_id;
+    SpotifyClone.users AS us ON us.plan_id = pl.plan_id;

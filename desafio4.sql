@@ -4,5 +4,5 @@ SELECT
 FROM
     SpotifyClone.users AS us
         INNER JOIN
-    history AS hi ON hi.user_id = us.user_id
+    SpotifyClone.history AS hi ON hi.user_id = us.user_id
 GROUP BY us.user_name;
